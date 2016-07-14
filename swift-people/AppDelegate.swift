@@ -11,12 +11,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        /**
-
-        * Manually test your code here.
+        let Claire = Person(name: "Claire Katherine", ageInYears: 27)
+        print(Claire.celebrateBirthday())
         
-        */
+        Claire.learnSkillBash()
+        Claire.learnSkillSwift()
+        Claire.learnSkillObjectiveC()
         
+        print("Is Claire a qualified tutor? \(Claire.qualifiedTutor)")
+        print("What if she learns one more programmer skill?!")
+        
+        Claire.learnSkillXcode()
+        print("Now she's good to go, ya? \(Claire.qualifiedTutor)")
         // Do not alter
         return true  //
     }   //////////////
